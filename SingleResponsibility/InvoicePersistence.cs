@@ -15,7 +15,7 @@ namespace SingleResponsibility
             this.invoice = invoice;
         }
 
-        public static void SaveToFile(string fileName)
+        public void SaveToFile(string fileName)
         {
             // saving file with given filename
         }
