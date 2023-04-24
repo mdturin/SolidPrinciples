@@ -6,23 +6,8 @@ using System.Threading.Tasks;
 
 namespace OpenClosed
 {
-    public class InvoicePersistence
+    interface InvoicePersistence
     {
-        Invoice invoice;
-
-        public InvoicePersistence(Invoice invoice)
-        {
-            this.invoice = invoice;
-        }
-
-        public void SaveToFile(string fileName)
-        {
-            // saving file with given filename
-        }
-
-        public void SaveToDB(string fileName)
-        {
-            // saving file with given filename
-        }
+        public void Save(Invoice invoice);
     }
 }
